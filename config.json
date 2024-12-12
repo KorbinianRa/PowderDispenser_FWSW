@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "calibration": {
         "augers": {
@@ -77,4 +78,85 @@
         "DEFAULT_SCALE_LDOVOLTAGE": 3,
         "DEFAULT_TIMEOUT": 10
     }
+=======
+{
+    "calibration": {
+        "augers": {
+            "8mm_base1": {
+                "dishwasher_salt": 1.9812121212121218e-05
+            },
+            "8mm_base": {
+                "dishwasher_salt": 2.1130909090909088e-05
+            }
+        },
+        "scaleSinglePointCal": false,
+        "loadCells": {
+            "100g": {
+                "Slope": 7.91113773979552e-05,
+                "Intercept": 9.1620912569
+            },
+            "50g": {
+                "Slope": 3.76410615652718e-05,
+                "Intercept": -21.8462474984
+            },
+            "20g": {
+                "Slope": 3.06828559218341e-05,
+                "Intercept": -12.9400964147
+            }
+        },
+        "weights": [
+            {
+                "value": 100,
+                "unit": "g"
+            },
+            {
+                "value": 50,
+                "unit": "g"
+            },
+            {
+                "value": 20,
+                "unit": "g"
+            }
+        ],
+        "pumps": {
+            "Flush": {
+                "a": 1.031888769,
+                "b": -0.151422487,
+                "pin": 12
+            },
+            "Drain": {
+                "a": 0,
+                "b": 0,
+                "pin": "I2C"
+            }
+        }
+    },
+    "constants": {
+        "decimal": 4,
+        "mixTime": 10.0,
+        "drainTime": 10.0,
+        "dispenseDir": 1,
+        "allowNegative": true,
+        "numMeas": 5,
+        "numReadings": 10,
+        "scaleSamplerate": 320,
+        "scaleGain": 128,
+        "scaleLDOVoltage": 3,
+        "scaleFilterType": "EWMA"
+    },
+    "default_constants": {
+        "DEFAULT_AVG_READING_SAMPLES": 100,
+        "DEFAULT_AVG_WEIGHT_SAMPLES": 100,
+        "DEFAULT_FILTER_TYPE": "EWMA",
+        "DEFAULT_TIMEOUT_MS": 1000,
+        "DEFAULT_REPS": 3,
+        "DEFAULT_SAMPLES": 3,
+        "DEFAULT_DISPENSE_DIR": 1,
+        "DEFAULT_SCALE_CALMODE": 1,
+        "DEFAULT_SCALE_SAMPLERATE": 320,
+        "DEFAULT_SCALE_GAIN": 128,
+        "DEFAULT_SCALE_LDOVOLTAGE": 3,
+        "DEFAULT_TIMEOUT": 10
+    }
+>>>>>>> c5e728c45412297ccfbd7313ba623480bfd3dee3
 }

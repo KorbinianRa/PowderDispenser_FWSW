@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 numpy
 pandas
 matplotlib
 datetime
 scipy
+=======
+numpy
+pandas
+matplotlib
+datetime
+scipy
+>>>>>>> c5e728c45412297ccfbd7313ba623480bfd3dee3
 pyserial
