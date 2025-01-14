@@ -1,4 +1,4 @@
-# Powder Dispenser Project
+# Firmware and Sofware Repository for Powder Dispenser Project
 
 ## Overview
 This subrepository contains all necessary software and firmware components for [the Powder Dispensing and Weighing module project repository](https://github.com/loppe35/PowderDispensing_and_Weighing_Module.git). This includes the source code, configuration files, notebooks, and environment setups. It's designed to provide a comprehensive toolkit for managing and controlling powder dispensation via software interfaces and hardware controllers.
@@ -12,7 +12,7 @@ This subrepository contains all necessary software and firmware components for [
 - **PowderDispenserCPP**: C++ modules that interface directly with the hardware or provide computational logic where higher performance is needed.
 - **PowderEnv**: Includes scripts or configurations to set up Python virtual environments, ensuring dependency management and isolated runtime.
 - **requirements.txt**: Lists all Python dependencies required to run Python scripts and notebooks effectively in the project.
-- **LICENSE**: A folder for all the licensing documentation which the project is released under.
+- **LICENSE**: All the licensing documentation which the project is released under.
 
 ## Getting Started
 To get started with this project, access the database and download the necessary files. Follow these steps to set up the environment and begin using the project components:
