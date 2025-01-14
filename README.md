@@ -1,7 +1,7 @@
 # Powder Dispenser Project
 
 ## Overview
-This subrepository contains all necessary software and firmware components for [the Powder Dispensing and Weighing module project repository](https://github.com/loppe35/PowderDispensing_and_Weighing_Module.git)., including source code, configuration files, notebooks, and environment setups. It's designed to provide a comprehensive toolkit for managing and controlling powder dispensation via software interfaces and hardware controllers.
+This subrepository contains all necessary software and firmware components for [the Powder Dispensing and Weighing module project repository](https://github.com/loppe35/PowderDispensing_and_Weighing_Module.git). This includes the source code, configuration files, notebooks, and environment setups. It's designed to provide a comprehensive toolkit for managing and controlling powder dispensation via software interfaces and hardware controllers.
 
 ## Contents
 - **.vscode**: Contains configuration settings for Visual Studio Code, helpful for setting up a consistent development environment across different setups.
