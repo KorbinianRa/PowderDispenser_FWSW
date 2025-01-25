@@ -1,29 +1,35 @@
-<<<<<<< HEAD
 {
     "calibration": {
         "augers": {
             "8mm_base1": {
+                // Calibration coefficient for the 8mm auger base 1 using dishwasher salt.
                 "dishwasher_salt": 1.9812121212121218e-05
             },
             "8mm_base": {
+                // Calibration coefficient for the 8mm auger base using dishwasher salt.
                 "dishwasher_salt": 2.1130909090909088e-05
             }
         },
+        // Determines if single-point calibration is applied for the scale.
         "scaleSinglePointCal": false,
         "loadCells": {
             "100g": {
+                // Slope and intercept values for the 100g load cell calibration curve.
                 "Slope": 7.91113773979552e-05,
                 "Intercept": 9.1620912569
             },
             "50g": {
+                // Slope and intercept values for the 50g load cell calibration curve.
                 "Slope": 3.76410615652718e-05,
                 "Intercept": -21.8462474984
             },
             "20g": {
+                // Slope and intercept values for the 20g load cell calibration curve.
                 "Slope": 3.06828559218341e-05,
                 "Intercept": -12.9400964147
             }
         },
+        // Predefined calibration weights with their values and units.
         "weights": [
             {
                 "value": 100,
@@ -40,123 +46,69 @@
         ],
         "pumps": {
             "Flush": {
+                // Calibration coefficients for the flush pump operation (linear model y = ax + b).
                 "a": 1.031888769,
                 "b": -0.151422487,
+                // GPIO pin used to control the flush pump.
                 "pin": 12
             },
             "Drain": {
+                // Calibration coefficients for the drain pump (currently unused).
                 "a": 0,
                 "b": 0,
+                // I2C address or method used for the drain pump (if applicable).
                 "pin": "I2C"
             }
         }
     },
     "constants": {
+        // Decimal precision for displayed values.
         "decimal": 4,
+        // Time in seconds to mix the powder during operations.
         "mixTime": 10.0,
+        // Time in seconds for draining during operations.
         "drainTime": 10.0,
+        // Direction for dispensing (1 = forward, -1 = reverse).
         "dispenseDir": 1,
+        // Allow negative weight readings (useful for testing or specific use cases).
         "allowNegative": true,
+        // Number of measurements to average for stability.
         "numMeas": 5,
+        // Number of readings to take for each measurement.
         "numReadings": 10,
+        // Sample rate for the scale in Hz.
         "scaleSamplerate": 320,
+        // Gain setting for the scale (affects sensitivity).
         "scaleGain": 128,
+        // LDO voltage setting for the scale (affects power regulation).
         "scaleLDOVoltage": 3,
+        // Type of filter applied to scale readings (e.g., EWMA = Exponentially Weighted Moving Average).
         "scaleFilterType": "EWMA"
     },
     "default_constants": {
+        // Default number of samples for average readings.
         "DEFAULT_AVG_READING_SAMPLES": 100,
+        // Default number of samples for average weight calculations.
         "DEFAULT_AVG_WEIGHT_SAMPLES": 100,
+        // Default filter type for readings.
         "DEFAULT_FILTER_TYPE": "EWMA",
+        // Default timeout for operations in milliseconds.
         "DEFAULT_TIMEOUT_MS": 1000,
+        // Default number of repetitions for certain operations.
         "DEFAULT_REPS": 3,
+        // Default number of samples for specific calculations.
         "DEFAULT_SAMPLES": 3,
+        // Default dispensing direction (1 = forward, -1 = reverse).
         "DEFAULT_DISPENSE_DIR": 1,
+        // Default scale calibration mode (1 = single-point, 0 = multi-point).
         "DEFAULT_SCALE_CALMODE": 1,
+        // Default sample rate for the scale in Hz.
         "DEFAULT_SCALE_SAMPLERATE": 320,
+        // Default gain setting for the scale.
         "DEFAULT_SCALE_GAIN": 128,
+        // Default LDO voltage setting for the scale in volts.
         "DEFAULT_SCALE_LDOVOLTAGE": 3,
+        // Default timeout duration in seconds.
         "DEFAULT_TIMEOUT": 10
     }
-=======
-{
-    "calibration": {
-        "augers": {
-            "8mm_base1": {
-                "dishwasher_salt": 1.9812121212121218e-05
-            },
-            "8mm_base": {
-                "dishwasher_salt": 2.1130909090909088e-05
-            }
-        },
-        "scaleSinglePointCal": false,
-        "loadCells": {
-            "100g": {
-                "Slope": 7.91113773979552e-05,
-                "Intercept": 9.1620912569
-            },
-            "50g": {
-                "Slope": 3.76410615652718e-05,
-                "Intercept": -21.8462474984
-            },
-            "20g": {
-                "Slope": 3.06828559218341e-05,
-                "Intercept": -12.9400964147
-            }
-        },
-        "weights": [
-            {
-                "value": 100,
-                "unit": "g"
-            },
-            {
-                "value": 50,
-                "unit": "g"
-            },
-            {
-                "value": 20,
-                "unit": "g"
-            }
-        ],
-        "pumps": {
-            "Flush": {
-                "a": 1.031888769,
-                "b": -0.151422487,
-                "pin": 12
-            },
-            "Drain": {
-                "a": 0,
-                "b": 0,
-                "pin": "I2C"
-            }
-        }
-    },
-    "constants": {
-        "decimal": 4,
-        "mixTime": 10.0,
-        "drainTime": 10.0,
-        "dispenseDir": 1,
-        "allowNegative": true,
-        "numMeas": 5,
-        "numReadings": 10,
-        "scaleSamplerate": 320,
-        "scaleGain": 128,
-        "scaleLDOVoltage": 3,
-        "scaleFilterType": "EWMA"
-    },
-    "default_constants": {
-        "DEFAULT_AVG_READING_SAMPLES": 100,
-        "DEFAULT_AVG_WEIGHT_SAMPLES": 100,
-        "DEFAULT_FILTER_TYPE": "EWMA",
-        "DEFAULT_TIMEOUT_MS": 1000,
-        "DEFAULT_REPS": 3,
-        "DEFAULT_SAMPLES": 3,
-        "DEFAULT_DISPENSE_DIR": 1,
-        "DEFAULT_SCALE_CALMODE": 1,
-        "DEFAULT_SCALE_SAMPLERATE": 320,
-        "DEFAULT_SCALE_GAIN": 128,
-        "DEFAULT_SCALE_LDOVOLTAGE": 3,
-        "DEFAULT_TIMEOUT": 10
-    }
->>>>>>> c5e728c45412297ccfbd7313ba623480bfd3dee3
 }

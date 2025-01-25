@@ -1,0 +1,14 @@
+### PlatformIO ###
+PowderDispenserCPP/.pioenvs
+PowderDispenserCPP/.piolibdeps
+PowderDispenserCPP/.clang_complete
+PowderDispenserCPP/.gcc-flags.json
+PowderDispenserCPP/.pio
+
+### VisualStudioCode ###
+PowderDispenserCPP/.vscode/*
+!PowderDispenserCPP/.vscode/settings.json
+!PowderDispenserCPP/.vscode/tasks.json
+!PowderDispenserCPP/.vscode/launch.json
+!PowderDispenserCPP/.vscode/extensions.json
+!PowderDispenserCPP/.vscode/*.code-snippets
