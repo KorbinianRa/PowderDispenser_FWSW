@@ -228,6 +228,30 @@ To run tests, use the examples provided in the `Use_Example.ipynb` notebook. The
 ---
 
 ### **Examples**
+#### Importing and Initilizing
+Firstly, the system needs a set of required libraries, as well as an initilization process where the module is initilized. This is done after the Arduino is flashed wit hthe firmware. This could look as follows, by first making sure you are working in the right directory, which needs to be the directory containing the `PowderDispenserController` folder.
+```python
+import os
+os.chdir("..")
+print(f"Current working directory: {os.getcwd()}")
+```
+Import the requried libraries:
+```python
+from PowderDispenserController import controller, get_serial_port, list_serial_ports
+
+import time 
+import numpy as np
+import matplotlib as plt
+```
+And initialize the powder dispenser instance:
+```python
+dispenseBot = controller.PowderDispenseController(get_serial_port(), 
+                                                  mixTime = 8, 
+                                                  drainTime = 10, 
+                                                  config_file = 'config.json'
+                                                  )
+```
+
 #### Dispensing Multiple Powders
 Here is a simple example on how one could dispense an amount of different predetermined substances, with their respective calibrations, solely relying on the auger (no feedback from the scale).
 ```python
