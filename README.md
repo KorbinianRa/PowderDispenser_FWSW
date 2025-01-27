@@ -52,7 +52,8 @@ Located in the `logs` directory:
 
 ### **5. Components and Hardware**
 A render depicting the complete system with explanatory labels is provided:
-![Full System w. Dummy](https://raw.githubusercontent.com/loppe35/PowderDispenser_BuildFiles/Renders/FullRender.jpg)
+![Full Render](https://github.com/user-attachments/assets/8775bf50-3ccd-4d4a-ae36-a18eea44f359)
+
 
 Below is a list of essential components required to set up the powder dispensing system.
 
@@ -61,17 +62,13 @@ These parts are available in the `hardware` submodule as STP and STL files and a
 
 - **Load Cell Housing**:
   - Houses and positions the load cell accurately for precise weight measurements, and serves as a rail for the dispensing head.
-  - ![Load Cell Housing](https://raw.githubusercontent.com/loppe35/PowderDispenser_BuildFiles/Part_Pictures/LC_Housing.jpg)
   - Here, the unigripper can also be seen, these are the small hooks taht are attached to the load cell to leave a space for the testing cell to rest.
 
 - **Dispensing Head**:
   - Holds the auger mechanism in place and ensures proper alignment, and sits in the 
-  - ![Dispenser Head sitting in the Load Cell housing rail](https://raw.githubusercontent.com/loppe35/PowderDispenser_BuildFiles/Part_Pictures/DispHead_onMount.jpg)
-  - ![Dispenser Head with needle in the needle rack](https://raw.githubusercontent.com/loppe35/PowderDispenser_BuildFiles/Part_Pictures/DispHead_w_needle.jpg)
 
 - **Syringe Bracket**:
   - Sits around a syringe and is able to hold on the Unigrippers on the load cell.
-  - ![Syringe Bracket](https://raw.githubusercontent.com/loppe35/PowderDispenser_BuildFiles/Part_Pictures/SyringeBracket_s.jpg)
 
 - **Base Front and Back**:
   - Provides structural support for the dispenser components. The front also holds the magnetic stirrer and peristaltice pump, while the back holds all the electronics.
@@ -87,7 +84,6 @@ These parts are available in the `hardware` submodule as STP and STL files and a
 
 - **Dummy Input 3D Printable Components(Optional)**:
   - Dummy Unit Casing Front and Back: 3D Printable parts for a dummy casing holding the peristaltic pump and the relay.
-  - ![Dummy Input](https://raw.githubusercontent.com/loppe35/PowderDispenser_BuildFiles/Part_Pictures/Dummy_s.jpg)
 
 
 #### **Additional Hardware Components**
